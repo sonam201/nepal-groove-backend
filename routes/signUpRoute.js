@@ -42,8 +42,8 @@ const signUpRoute = {
         to: email,
         from: "Gigday.223@outlook.com",
         subject: "Please Verify Your Email",
-        text: `Thanks For Signing! To verify your email,click here:
-                http://localhost:3000/verify-email/${verificationString}`,
+        text: `Thanks For Signing! To verify your email, click here:
+https://your-frontend-domain.vercel.app/verify-email/${verificationString}`,
       });
       console.log("sendEmail");
     } catch (e) {
