@@ -19,7 +19,7 @@ const logInRoute = {
     const isCorrect = await bcrypt.compare(password, passwordHash);
     console.log(isCorrect);
     if (isCorrect) {
-      if (isVerified === "false") {
+      if (!isVerified) {
         console.log("isfalse");
         res.status(401).json({ message: "account has not been verified" });
       }
